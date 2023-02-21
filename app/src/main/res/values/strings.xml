@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Android Rawlab space</string>
+
+    <string name="getstart">Get Started</string>
+    <string name="textstart">Create your profile and find your favorite place</string>
+    <string name="username">Username : </string>
+    <string name="email">Email : </string>
+    <string name="password">Password : </string>
 </resources>
