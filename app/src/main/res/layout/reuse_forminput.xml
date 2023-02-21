@@ -6,27 +6,38 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="335dp"
+        android:layout_height="21dp"
+        android:textSize="14dp"
+        android:text="@string/password"
+        android:textColor="@color/colortextblack"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        />
+
     <EditText
         android:id="@+id/idedit"
-        android:layout_width="305dp"
-        android:layout_height="40dp"
+        android:layout_width="335dp"
+        android:layout_height="44dp"
         android:textColor="@color/colortext1"
-        android:layout_marginTop="25dp"
         android:padding="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
         android:background="@color/coloredittext1"
         tools:ignore="MissingConstraints" />
     <ImageView
         android:id="@+id/idimage"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
+        android:layout_width="15dp"
+        android:layout_height="8.25dp"
         android:background="@drawable/eyeclose"
-        android:layout_marginTop="13.5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="260dp"
-        android:layout_marginRight="19.5dp"
+        android:layout_marginTop="20.5dp"
+        app:layout_constraintTop_toTopOf="@id/idedit"
+        android:layout_marginLeft="308.5dp"
+        android:layout_marginRight="15.5dp"
         app:layout_constraintStart_toStartOf="parent"
 
         />
