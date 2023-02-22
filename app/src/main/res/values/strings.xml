@@ -6,4 +6,13 @@
     <string name="username">Username : </string>
     <string name="email">Email : </string>
     <string name="password">Password : </string>
+    <string name="create_akun">Create Account</string>
+    <string name="signup">Already have an account? Sign up</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="textstart2">Please enter your details</string>
+    <string name="createacount">Don’t have an account? Create Account</string>
+    <string name="forgotPass">Forgot Password?</string>
+
+
+
 </resources>
