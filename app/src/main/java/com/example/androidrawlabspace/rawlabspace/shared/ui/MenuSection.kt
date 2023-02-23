@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.androidrawlabspace.R
 import com.example.androidrawlabspace.databinding.ActivityHeaderBinding
-import com.example.androidrawlabspace.databinding.ReuseForminputBinding
+import com.example.androidrawlabspace.databinding.ActivityMenuSectionBinding
 
-class HeaderView : ConstraintLayout {
+class MenuSection : ConstraintLayout {
     private lateinit var mContext: Context
-    private lateinit var binding: ActivityHeaderBinding
+    private lateinit var binding: ActivityMenuSectionBinding
+    private val imageView: ImageView = binding.icon
 
     constructor(context: Context) : super(context) {
         init(context, null)
@@ -28,10 +30,11 @@ class HeaderView : ConstraintLayout {
 
     private fun init(context: Context, attributeSet: AttributeSet?) {
         mContext = context
-        binding = ActivityHeaderBinding.bind(LayoutInflater.from(mContext).inflate(R.layout.activity_header , this, true))
+        binding = ActivityMenuSectionBinding.bind(LayoutInflater.from(mContext).inflate(R.layout.activity_menu_section , this, true))
     }
 
-    fun setTitle (title: String){
-        binding.titleHeader.text = title
+    fun setJuduldanIcon (judul: String, idGmbr: Int){
+        binding.judulIcon.text = judul
+        imageView.setImageResource(idGmbr)
     }
 }
