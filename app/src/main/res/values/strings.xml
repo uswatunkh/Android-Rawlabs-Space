@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Rawlab space</string>
 
     <string name="getstart">Get Started</string>
@@ -8,4 +8,9 @@
     <string name="password">Password : </string>
     <string name="email_pengguna">gloriagtanama@gmail.com</string>
     <string name="nama_pengguna">Gloria Grace Tanama</string>
+    <string name="alamat">Tawangsari CT II, Gang Gayamsari, Karangwuni, Caturtunggal, Karang Wuni, Caturtunggal, Jogja</string>
+    <string name="waktuTutup">Closed on 19 Feb, 00:00 PM</string>
+    <string name="isi_deskrip">Consists of two floors with a modern industrial concept with a high facade that feels relieved.
+
+Serves a menu of food such as dumplings, lasagna, grilled rice, and various cakes with prices ranging from IDR 13K to IDR 27K. Drinks also vary, from coffee, tea to kombucha with a price range of IDR 15K to IDR 28K.</string>
 </resources>
