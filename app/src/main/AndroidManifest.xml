@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidRawlabSpace"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".header"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".header"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".rawlabspace.shared.ui.DialogBottomsheet"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

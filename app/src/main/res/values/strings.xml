@@ -13,6 +13,17 @@
     <string name="createacount">Don’t have an account? Create Account</string>
     <string name="forgotPass">Forgot Password?</string>
 
+    <string name="errorConnection1">No Internet Connection</string>
+    <string name="errorConnection2">Please check your internet connection</string>
+    <string name="btnEnable">Enable Wifi</string>
 
+    <string name="errorMaintenance1">Service Unavailable</string>
+    <string name="errorMaintenance2">This service is not available yet.\n Please try again later</string>
+    <string name="btnMaintenance">Ok</string>
 
+    <string name="selectAddress">Select Address</string>
+    <string name="recentSearch">Recent Search</string>
+
+    <string name="noresult">No Result</string>
+     <string name="noresult2">Please try other keywords</string>
 </resources>

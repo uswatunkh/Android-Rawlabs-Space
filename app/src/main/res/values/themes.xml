@@ -22,4 +22,9 @@
         <item name="android:actionMenuTextColor">@android:color/white</item>
         <!--        <item name="titleTextColor">@color/colorPrimary</item>-->
     </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 </resources>
