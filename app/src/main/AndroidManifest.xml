@@ -9,25 +9,23 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BankSephora"
+        android:theme="@style/Theme.BankSephora.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".FasilitasTempat"
+            android:name=".rawlabspace.shared.ui.HostPlace"
             android:exported="false" />
         <activity
-            android:name=".fasilitas"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".HeaderTempat" -->
-        <!-- android:exported="false" /> -->
+            android:name=".rawlabspace.shared.ui.FasilitasTempat"
+            android:exported="false" />
         <activity
             android:name=".rawlabspace.submitreview.MainSubmitReview"
             android:exported="true"
             android:theme="@style/Theme.BankSephora.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity
             android:name=".rawlabspace.profil.EditProfile"
@@ -36,13 +34,11 @@
             android:name=".rawlabspace.profil.MainProfile"
             android:exported="true"
             android:theme="@style/Theme.BankSephora.NoActionBar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".rawlabspace.shared.ui.Navigasi"
@@ -55,13 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

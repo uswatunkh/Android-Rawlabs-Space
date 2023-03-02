@@ -9,6 +9,7 @@ class EditProfile : AppCompatActivity() {
     private lateinit var binding: ActivityEditProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_profile)
+        binding = ActivityEditProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

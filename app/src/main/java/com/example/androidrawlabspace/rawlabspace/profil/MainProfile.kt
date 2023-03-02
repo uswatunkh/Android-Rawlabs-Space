@@ -12,23 +12,20 @@ class MainProfile : AppCompatActivity() {
     private lateinit var binding: ActivityMainProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_profile)
+        binding = ActivityMainProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         initView()
-//        binding.editIcon.setOnClickListener{startActivity(Intent(this, MainActivity::class.java))}
+        binding.editIcon.setOnClickListener{startActivity(Intent(this, EditProfile::class.java))}
     }
 
     fun initView(){
-//        binding.editIcon.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
-//        if(::binding.isInitialized){
-//            binding.editIcon.setOnClickListener {
-//                val intent = Intent(this, MainActivity::class.java)
-//                startActivity(intent)
-//            }
-//        } else {
-//            Log.d("[EROR]", "[Belum diinstal]")
-//        }
+        if(::binding.isInitialized){
+            binding.editIcon.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+        } else {
+            Log.d("[EROR]", "[Belum diinstal]")
+        }
     }
 }
