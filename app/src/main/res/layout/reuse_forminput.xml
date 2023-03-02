@@ -12,7 +12,7 @@
         android:layout_height="21dp"
         android:textSize="14dp"
         android:text="@string/password"
-        android:textColor="@color/colortextblack"
+        android:textColor="@color/Neutralblack"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginRight="20dp"
         android:layout_marginTop="32dp"
@@ -22,12 +22,12 @@
         android:id="@+id/idedit"
         android:layout_width="335dp"
         android:layout_height="44dp"
-        android:textColor="@color/colortext1"
+        android:textColor="@color/Neutraldarkgrey"
         android:padding="10dp"
         android:layout_marginRight="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text"
-        android:background="@color/coloredittext1"
+        android:background="@drawable/rectangle_form"
         tools:ignore="MissingConstraints" />
     <ImageView
         android:id="@+id/idimage"

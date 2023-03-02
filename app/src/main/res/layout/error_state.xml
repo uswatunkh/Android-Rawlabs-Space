@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg">
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="65dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="155dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        />
+
+    <ImageView
+        android:id="@+id/imageError"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/lost_connection"
+        />
+    
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="335dp"
+        android:layout_height="30dp"
+        android:text="@string/errorConnection1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageError"
+        android:layout_marginTop="37dp"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:id="@+id/textErrortwo"
+        android:layout_width="335dp"
+        android:layout_height="42dp"
+        android:text="@string/errorConnection2"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textError"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnError"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:text="@string/btnEnable"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textErrortwo"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/bgndbutton"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

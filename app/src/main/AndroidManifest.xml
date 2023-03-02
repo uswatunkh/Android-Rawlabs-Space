@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSephora.NoActionBar"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".header"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".rawlabspace.shared.ui.HostPlace"
             android:exported="false" />
@@ -52,6 +55,15 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".rawlabspace.shared.ui.DialogBottomsheet"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
