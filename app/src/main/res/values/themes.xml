@@ -34,6 +34,8 @@
     <style name="DialogSlideAnimFullWidth" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
         <item name="windowFixedWidthMajor">90%</item>
         <item name="windowFixedWidthMinor">90%</item>
+    </style>
+
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>

@@ -6,7 +6,6 @@
     <string name="username">Username : </string>
     <string name="email">Email : </string>
     <string name="password">Password : </string>
-<<<<<<< HEAD
     <string name="email_pengguna">gloriagtanama@gmail.com</string>
     <string name="nama_pengguna">Gloria Grace Tanama</string>
     <string name="alamat">Tawangsari CT II, Gang Gayamsari, Karangwuni, Caturtunggal, Karang Wuni, Caturtunggal, Jogja</string>
@@ -14,7 +13,7 @@
     <string name="isi_deskrip">Consists of two floors with a modern industrial concept with a high facade that feels relieved.
 
 Serves a menu of food such as dumplings, lasagna, grilled rice, and various cakes with prices ranging from IDR 13K to IDR 27K. Drinks also vary, from coffee, tea to kombucha with a price range of IDR 15K to IDR 28K.</string>
-=======
+
     <string name="create_akun">Create Account</string>
     <string name="signup">Already have an account? Sign up</string>
     <string name="welcome">Welcome Back</string>
@@ -34,6 +33,8 @@ Serves a menu of food such as dumplings, lasagna, grilled rice, and various cake
     <string name="recentSearch">Recent Search</string>
 
     <string name="noresult">No Result</string>
-     <string name="noresult2">Please try other keywords</string>
->>>>>>> 751dd808c2e90dc794d5fdb219d90547f4fff3ab
+    <string name="noresult2">Please try other keywords</string>
+
+    <string name="getStared">Back to the workspace safer and smarter</string>
+    <string name="getStared2">Over 200+ spaces with meeting rooms, with more than 50 new spaces join each month from lowest to highest cost</string>
 </resources>
