@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rawlabspace.submitreview.AddReview">
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.HeaderView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="258dp"
+        android:text="Give Feedback"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/bintang"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/bintangkosong"
+        app:layout_constraintEnd_toStartOf="@+id/bintang2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/bintang2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/bintangkosong"
+        app:layout_constraintEnd_toStartOf="@+id/bintang3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/bintang3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/bintangkosong"
+        app:layout_constraintEnd_toStartOf="@+id/bintang5"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/bintang5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/bintangkosong"
+        app:layout_constraintEnd_toStartOf="@+id/bintang4"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/bintang4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="81dp"
+        android:src="@drawable/bintangkosong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/pesan_review"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bintang" />
+
+    <EditText
+        android:id="@+id/isiText"
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_edittext"
+        android:gravity="top"
+        android:hint="Share your expirience"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiText" />
+
+    <ImageButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

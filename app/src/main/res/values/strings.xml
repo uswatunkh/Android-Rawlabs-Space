@@ -37,4 +37,8 @@ Serves a menu of food such as dumplings, lasagna, grilled rice, and various cake
 
     <string name="getStared">Back to the workspace safer and smarter</string>
     <string name="getStared2">Over 200+ spaces with meeting rooms, with more than 50 new spaces join each month from lowest to highest cost</string>
+
+    <string name="review1">The menu varies from tea to coffee, there is already a rice and dessert menu too.</string>
+    <string name="review2">There are wifi facilities, meeting rooms, lounges, prayer rooms (in front), toilets.</string>
+    <string name="pesan_review">Do you have any thought to share?</string>
 </resources>

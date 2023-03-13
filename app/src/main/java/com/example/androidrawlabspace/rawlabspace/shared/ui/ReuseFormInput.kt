@@ -51,6 +51,13 @@ class ReuseFormInput: ConstraintLayout {
         binding.idedit.hint = text
     }
 
+    fun setTitle (text: String){
+        binding.text.setText(text)
+    }
+    fun setHint (hint: String){
+        binding.idedit.hint =hint
+    }
+
     fun setTypePassword(isPassword: Boolean = false ){
         if (isPassword){
             binding.idedit.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD)
