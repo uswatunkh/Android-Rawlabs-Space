@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+            <ImageView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_detail_ruang" />
+
+        <TextView
+            android:id="@+id/ruang"
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="135dp"
+            android:text="Antologi Collaborative"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="291dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="IDR 40K"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/jalan"
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="135dp"
+            android:text="Tawangsari CT II, Gang Gayamsari, Karangwuni, Caturtunggal, Karang Wuni, Caturtunggal, Jogja"
+            android:textSize="12dp"
+            android:textColor="@color/Neutraldarkgrey"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/hour"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="291dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="20dp"
+            android:text="per hour"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginRight="135dp"
+            android:text="Open"
+            android:textSize="12dp"
+            android:textColor="@color/success"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="135dp"
+            android:text="Closed on 19 Feb, 00:00 PM"
+            android:textSize="12dp"
+            android:textColor="@color/Neutraldarkgrey"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginRight="135dp"
+            android:text="Description"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="112dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="161dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/description"
+            android:textSize="12dp"
+            android:textColor="@color/Neutraldarkgrey"
+
+            />
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="289dp"
+            android:layout_marginRight="135dp"
+            android:text="Facilities"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="335dp"
+            android:layout_height="24dp"
+            android:background="@drawable/facilities_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="323dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageView
+            android:layout_width="335dp"
+            android:layout_height="24dp"
+            android:background="@drawable/facilities_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="357dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="401dp"
+            android:layout_marginRight="135dp"
+            android:text="Host"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="335dp"
+            android:layout_height="43dp"
+            android:background="@drawable/host"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="441dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="508dp"
+            android:layout_marginRight="135dp"
+            android:text="Rate Review"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="296dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="508dp"
+            android:background="@drawable/action_seeall"
+
+            />
+        
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="540dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rate1"
+
+            />
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="540dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rate1"
+
+            />
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="644dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rate2"
+
+            />
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="748dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rate3"
+
+            />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="850dp"
+            android:layout_marginRight="135dp"
+            android:text="People Also Viewed"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/seepeople"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginLeft="296dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="850dp"
+            android:background="@drawable/action_seeall"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="865dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitBooking"
+            android:layout_width="335dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/slider_booknow"
+            />
+
+        <ImageView
+            android:id="@+id/rectangle"
+            android:layout_width="65dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginRight="155dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/rectangle"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

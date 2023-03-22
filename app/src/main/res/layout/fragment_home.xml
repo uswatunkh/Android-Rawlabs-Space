@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:id="@+id/imagehome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="310dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/imagehome"
+        />
+    <TextView
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="228dp"
+        android:layout_marginTop="49dp"
+        android:text="Hi Julia"
+        android:textColor="@color/Neutralblack"
+        />
+    
+    <TextView
+        android:layout_width="141dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="156dp"
+        android:text="Where today you’ll work?"
+        android:textSize="12dp"
+        android:textColor="@color/Neutraldarkgrey"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsearch"
+        android:layout_width="15.75dp"
+        android:layout_height="15.75dp"
+        android:textColor="@color/Neutraldarkgrey"
+        android:padding="10dp"
+        android:layout_marginRight="248.13dp"
+        app:layout_constraintStart_toStartOf="@id/idedit"
+        app:layout_constraintEnd_toEndOf="@id/idedit"
+        app:layout_constraintTop_toTopOf="@id/idedit"
+        android:layout_marginLeft="11.2dp"
+        android:layout_marginTop="14.13dp"
+        android:background="@drawable/btn_search"
+         />
+
+    <EditText
+        android:id="@+id/idedit"
+        android:layout_width="275dp"
+        android:layout_height="44dp"
+        android:textColor="@color/Neutraldarkgrey"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rectangle_form"/>
+    
+    <ImageView
+        android:id="@+id/filter"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="331dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/filtericon"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                >
+                
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Recommendations"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Neutralblack"
+                    />
+                
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

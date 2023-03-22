@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F7FA"
+    >
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseNavbarTopOrange
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"/>
+
+    <!--    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseNavbarTopOrange-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        />-->
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
+
+                >
+
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="315dp"
+                    android:background="@drawable/image_bank"
+                    />
+
+                <TextView
+                    android:layout_width="285dp"
+                    android:layout_height="21dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="29.5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Bank Central Asia"
+                    android:textColor="@color/Neutralblack"
+                    android:textSize="14dp"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons2"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cons1"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="335dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Virtual Account Number"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Neutralblack"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textCopy"
+                    android:layout_width="291dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="71dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="64dp"
+                    android:text="0263 6182 3152 1115"
+                    android:textColor="@color/primary"
+                    android:textSize="16dp"
+                    />
+                
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/copyPaste"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginLeft="333dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/icon_copypaste"
+
+                    />
+                
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="114dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Pay for the order to the Virtual Account above before making \n return order."
+                    android:textSize="12dp"
+                    android:textColor="@color/Neutraldarkgrey"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cons2"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                >
+
+
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Transfer instructions via ATM"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Neutralblack"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="15dp"
+                    android:layout_height="8.25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="342.63dp"
+                    android:layout_marginRight="24.12dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/down_orange_button"
+                    />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons4"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cons3"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                >
+
+
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Price Details"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Neutralblack"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="15dp"
+                    android:layout_height="8.25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="342.63dp"
+                    android:layout_marginRight="24.12dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/up_orange_button"
+                    />
+                
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="126dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/Neutralblack"
+                    android:text="@string/instruction_transfer"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

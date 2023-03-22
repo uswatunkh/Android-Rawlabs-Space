@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".rawlabspace.shared.ui.HeaderTempat">
+
+    <TextView
+        android:id="@+id/namaTempat"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="63dp"
+        android:fontFamily="@font/alike"
+        android:gravity="top"
+        android:text="Antologi Collaborative"
+        android:textColor="#2B2F3C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/hargaTempat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/alamatTempat"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="63dp"
+        android:text="@string/alamat"
+        app:layout_constraintEnd_toStartOf="@+id/jadwalTempat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaTempat"
+        app:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="141dp"
+        android:text="Open"
+        android:textColor="#4ACB66"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamatTempat"
+        app:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/jamOperasi"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="143dp"
+        android:text="Closed on 19 Feb, 00:00 PM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_editor_absoluteX="20dp"
+        app:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/hargaTempat"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="@font/alike"
+        android:gravity="top"
+        android:text="IDK 200K"
+        android:textColor="#2B2F3C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jadwalTempat"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="81dp"
+        android:text="per day"
+        app:layout_constraintBottom_toTopOf="@+id/isiDeskripsi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hargaTempat" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="287dp"
+        android:fontFamily="@font/alike"
+        android:gravity="top"
+        android:text="Deskripsi"
+        android:textColor="#2B2F3C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jamOperasi" />
+
+    <TextView
+        android:id="@+id/isiDeskripsi"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:gravity="top"
+        android:text="@string/isi_deskrip"
+        android:textColor="#6C748A"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

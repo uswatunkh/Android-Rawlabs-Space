@@ -17,10 +17,12 @@ import com.example.androidrawlabspace.databinding.BottomsheetlayoutBinding
 import com.example.androidrawlabspace.databinding.ErrorStateBinding
 import com.example.androidrawlabspace.databinding.SelectAddressBinding
 import android.R.layout.simple_list_item_1
+import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidrawlabspace.databinding.RuangBinding
 import com.example.androidrawlabspace.databinding.SelectAddressNoresultBinding
+import com.example.androidrawlabspace.rawlabspace.screen.PeopleAlsoView.PeopleAlsoView
 
 
 class DialogBottomsheet : AppCompatActivity(){
@@ -42,7 +44,12 @@ class DialogBottomsheet : AppCompatActivity(){
 
 
         binding.botttomSheet.setOnClickListener{
-            ruang()
+            //ruang()
+            showDialogSearch()
+
+//            val intent = Intent(this, PeopleAlsoView ::class.java)
+//            // start your next activity
+//            startActivity(intent)
 
 
 
@@ -93,7 +100,7 @@ class DialogBottomsheet : AppCompatActivity(){
         dialog.window?.setGravity(Gravity.BOTTOM);
     }
 
-    private fun showDialogErrorState() {
+     fun showDialogErrorState() {
 
         val dialog = Dialog(this)
         val binding2 = ErrorStateBinding.bind(layoutInflater.inflate(R.layout.error_state, null))
@@ -138,7 +145,7 @@ class DialogBottomsheet : AppCompatActivity(){
 
     }
 
-    private fun showDialogSearch() {
+    fun showDialogSearch() {
 
         val dialog = Dialog(this)
         val binding2 = SelectAddressBinding.bind(layoutInflater.inflate(R.layout.select_address, null))
@@ -157,7 +164,7 @@ class DialogBottomsheet : AppCompatActivity(){
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
         dialog.window?.getAttributes()?.windowAnimations = R.style.DialogAnimation;
         dialog.window?.setGravity(Gravity.BOTTOM);
-        binding2.idedit.hint = "Street, address"
+        //binding2.idedit.hint = "Street, address"
 
         //recyclerView = findViewById(R.id.recycler)
         binding2.recycler.setHasFixedSize(true)
@@ -209,7 +216,7 @@ class DialogBottomsheet : AppCompatActivity(){
     }
 
     private fun ruang() {
-        val dialog = Dialog(this)
+        val dialog = Dialog(this, R.style.Theme_BankSephora)
         val binding2 = RuangBinding.bind(layoutInflater.inflate(R.layout.ruang, null))
 
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -224,7 +231,7 @@ class DialogBottomsheet : AppCompatActivity(){
         dialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT,1500);
 
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
-//        dialog.window?.getAttributes()?.windowAnimations = R.style.DialogAnimation;
+        setTheme(R.style.Theme_BankSephora)
 //        dialog.window?.setGravity(Gravity.BOTTOM);
         //binding2.idedit.hint = "Street, address"
 

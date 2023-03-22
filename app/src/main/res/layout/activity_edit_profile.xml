@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F9F9FB"
+    tools:context=".rawlabspace.profil.EditProfile">
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.HeaderView
+        android:id="@+id/headerEdit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/fotoProfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/fotoprofil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerEdit" />
+
+    <ImageView
+        android:id="@+id/iconKamera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/icontkapict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerEdit" />
+
+    <TextView
+        android:id="@+id/namaProfil"
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="81dp"
+        android:fontFamily="@font/alike"
+        android:letterSpacing="0.05"
+        android:text="@string/nama_pengguna"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconKamera" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="81dp"
+        android:fontFamily="@font/alike"
+        android:letterSpacing="0.05"
+        android:text="@string/email_pengguna"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaProfil" />
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseFormInput
+        android:id="@+id/fullName"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseFormInput
+        android:id="@+id/phoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseFormInput
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncancel"
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:text="Cancel"
+            android:background="@drawable/bgrndpolos2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/alike"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnupdate"
+            android:layout_width="160dp"
+            android:layout_height="47dp"
+            android:background="@drawable/btngray"
+            android:fontFamily="@font/alike"
+            android:text="Update Profile"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="220dp"/>
+            </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

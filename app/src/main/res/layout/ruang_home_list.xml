@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageHome"
+        android:layout_width="300dp"
+        android:layout_height="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/imageruanghome"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imageruanghome"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/namaRuang"
+        android:layout_width="176dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageHome"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginTop="16dp"
+        android:text="Antologi Collaborative"
+        android:textSize="16dp"
+        android:textColor="@color/Neutralblack"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="78dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toEndOf="@id/namaRuang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageHome"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:text="IDR 200K"
+        android:textSize="16dp"
+        android:textColor="@color/Neutralblack"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/jlnRuang"
+        android:layout_width="176dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaRuang"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginTop="9dp"
+        android:text="Tawangsari CT II, Gang Gayamsari, Karangwuni, Caturtunggal, Karang Wuni, Caturtunggal, Jogja"
+        android:textSize="12dp"
+        android:textColor="@color/Neutralblack"
+        />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="42dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toEndOf="@id/jlnRuang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaRuang"
+        android:layout_marginLeft="72.2dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="9dp"
+        android:text="per day"
+        android:textSize="12dp"
+        android:textColor="@color/Neutralblack"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

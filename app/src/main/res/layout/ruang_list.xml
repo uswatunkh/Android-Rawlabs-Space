@@ -28,7 +28,7 @@
         android:layout_marginLeft="110dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="23dp"
-
+        android:textSize="16dp"
 
         />
     
@@ -37,6 +37,7 @@
         android:layout_width="245dp"
         android:layout_height="16dp"
         android:text="Ruko Dr. Sardjito, Terban, Gondokusuman"
+        android:textSize="12dp"
         android:textColor="@color/Neutraldarkgrey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,48 @@
         android:layout_marginLeft="110dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="46dp"
+        />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="111.5dp"
+        android:layout_marginRight="248.5dp"
+        android:layout_marginTop="74.5dp"
+        android:background="@drawable/start_review"
+        />
+    <TextView
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="131dp"
+        android:layout_marginRight="216dp"
+        android:layout_marginTop="73dp"
+        android:text="4.00"
+        android:textSize="12dp"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="251dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/btnharga"
+        android:text="IDR 35K/day"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+
         />
 
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    tools:context=".rawlabspace.shared.ui.Navigasi">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/iconhometdkwarna" />
+
+        <ImageView
+            android:id="@+id/iconSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/searchbtn" />
+
+        <ImageView
+            android:id="@+id/iconMssg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/chatbtn" />
+
+        <ImageView
+            android:id="@+id/iconProfil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/profilbtn" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

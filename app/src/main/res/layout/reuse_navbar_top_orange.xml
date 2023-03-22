@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="5.83dp"
+            android:layout_height="11.67dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="32.06dp"
+            android:layout_marginRight="337.08dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/previous_button"
+            />
+        
+        <TextView
+            android:layout_width="295dp"
+            android:layout_height="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:text="Guest Information"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            />
+        
+        
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

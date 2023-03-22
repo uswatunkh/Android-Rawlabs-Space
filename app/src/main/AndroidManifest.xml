@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -9,19 +12,107 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidRawlabSpace"
+        android:theme="@style/Theme.BankSephora"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".header"-->
-<!--            android:exported="false" />-->
+
         <activity
-            android:name=".rawlabspace.shared.ui.DialogBottomsheet"
-            android:exported="true">
+            android:name=".rawlabspace.screen.onboarding.Onboard"
+            android:exported="true"
+            android:theme="@style/Theme.BankSephora.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".rawlabspace.screen.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.Booking.Booking"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.Booking.BookingPayment"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.Booking.BookingPaymentDetail"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.Booking.BookingResult"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.PeopleAlsoView.PeopleAlsoView"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.fragment.FragmentMain"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+
+            />
+        <activity
+            android:name=".rawlabspace.screen.register.Register"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+            />
+        <activity
+            android:name=".rawlabspace.screen.DetailRuang.DetailRuang"
+            android:exported="false"
+            android:theme="@style/Theme.BankSephora.NoActionBar"
+            />
+        <activity
+            android:name=".rawlabspace.shared.ui.DialogBottomsheet"
+            android:exported="false" />
+        <activity
+            android:name=".rawlabspace.profil.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rawlabspace.profil.MainProfile"
+            android:exported="true"
+            android:theme="@style/Theme.BankSephora.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".rawlabspace.shared.ui.Navigasi"
+            android:exported="false" />
+        <activity
+            android:name=".rawlabspace.shared.ui.MenuSection"
+            android:exported="false" />
+        <activity
+            android:name=".rawlabspace.shared.ui.HeaderView"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <meta-data

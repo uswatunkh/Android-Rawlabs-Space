@@ -1,16 +1,24 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Rawlab space</string>
+
+    <string name="onboard_satu">Back to the \n workspace safer \n and smarter</string>
+    <string name="onboard_dua">Over 200+ spaces with meeting rooms,\n with more than 50 new spaces join each \n month from lowest to highest cost</string>
 
     <string name="getstart">Get Started</string>
     <string name="textstart">Create your profile and find your favorite place</string>
     <string name="username">Username : </string>
     <string name="email">Email : </string>
     <string name="password">Password : </string>
+
+    <string name="instruction_transfer">1. Select m-transfer then Virtual Account \n 2. Enter the virtual account number above and \n select Send  \n 3. The total bill that has been paid will appear, \n then select OK \n 4. Enter your PIN and select OK</string>
+
+
     <string name="create_akun">Create Account</string>
-    <string name="signup">Already have an account? Sign up</string>
+    <string name="sign">Sign in</string>
+    <string name="signup">Already have an account?</string>
     <string name="welcome">Welcome Back</string>
     <string name="textstart2">Please enter your details</string>
-    <string name="createacount">Don’t have an account? Create Account</string>
+    <string name="createacount">Don’t have an account? </string>
     <string name="forgotPass">Forgot Password?</string>
 
     <string name="errorConnection1">No Internet Connection</string>
@@ -25,5 +33,21 @@
     <string name="recentSearch">Recent Search</string>
 
     <string name="noresult">No Result</string>
-     <string name="noresult2">Please try other keywords</string>
+    <string name="noresult2">Please try other keywords</string>
+
+    <string name="description">Consists of two floors with a modern industrial concept with a high facade that feels relieved.
+
+Serves a menu of food such as dumplings, lasagna, grilled rice, and various cakes with prices ranging from IDR 13K to IDR 27K. Drinks also vary, from coffee, tea to kombucha with a price range of IDR 15K to IDR 28K.</string>
+
+
+    <string name="email_pengguna">gloriagtanama@gmail.com</string>
+    <string name="nama_pengguna">Gloria Grace Tanama</string>
+    <string name="alamat">Tawangsari CT II, Gang Gayamsari, Karangwuni, Caturtunggal, Karang Wuni, Caturtunggal, Jogja</string>
+    <string name="waktuTutup">Closed on 19 Feb, 00:00 PM</string>
+    <string name="isi_deskrip">Consists of two floors with a modern industrial concept with a high facade that feels relieved.
+
+Serves a menu of food such as dumplings, lasagna, grilled rice, and various cakes with prices ranging from IDR 13K to IDR 27K. Drinks also vary, from coffee, tea to kombucha with a price range of IDR 15K to IDR 28K.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    >>>>>>> origin/Gabb
 </resources>

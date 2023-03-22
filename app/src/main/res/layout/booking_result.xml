@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary">
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="323dp"
+        android:layout_marginTop="31.75dp"
+        android:background="@drawable/x_transparant"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons"
+        android:layout_width="335dp"
+        android:layout_height="536.58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="137.71dp"
+        android:layout_marginBottom="137.71dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        android:background="@drawable/dialog_bg_onboard"
+        >
+        
+        <TextView
+            android:layout_width="295dp"
+            android:layout_height="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40.29dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/success"
+            android:text="Payment Success"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            
+            />
+        <TextView
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="66.29dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Wed, 2 Feb 2023 | 09:30 AM"
+            android:textColor="@color/Neutraldarkgrey"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            />
+        
+        <ImageView
+            android:layout_width="295dp"
+            android:layout_height="158dp"
+            android:background="@drawable/card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="99.29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:layout_width="295dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="307.29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Detail Transaction"
+            android:textSize="16dp"
+            android:textColor="@color/Neutralblack"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="164.5dp"
+            android:layout_height="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="357.29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="150.5dp"
+            android:text="Order ID"
+            android:textSize="14dp"
+            android:textColor="@color/Neutralblack"
+            />
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="357.29dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginRight="20dp"
+            android:text="ID32573"
+            android:textSize="14dp"
+            android:textColor="@color/Neutralblack"
+            android:textAlignment="textEnd"
+            />
+        <TextView
+            android:layout_width="164.5dp"
+            android:layout_height="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="398.29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="150.5dp"
+            android:text="Payment Method"
+            android:textSize="14dp"
+            android:textColor="@color/Neutralblack"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="398.29dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginRight="20dp"
+            android:text="Virtual Account"
+            android:textSize="14dp"
+            android:textColor="@color/Neutralblack"
+            android:textAlignment="textEnd"
+            />
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="466.29dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bgndbutton"
+            android:text="Download Receipt"
+            android:textColor="@color/white"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/cons"
+        android:layout_marginLeft="137.5dp"
+        android:layout_marginRight="137.5dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="520.29dp"
+        android:background="@drawable/check_yes"
+
+        />
+
+    
+
+    
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

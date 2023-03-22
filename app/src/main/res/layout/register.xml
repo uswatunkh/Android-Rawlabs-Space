@@ -2,7 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
 
     <TextView
         android:id="@+id/textgetstart"
@@ -49,7 +51,7 @@
 
 
     <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseFormInput
-        android:id="@+id/editemail"
+        android:id="@+id/editEmail"
         android:layout_width="335dp"
         android:layout_height="wrap_content"
         android:textColor="@color/Neutraldarkgrey"
@@ -90,19 +92,49 @@
         android:background="@drawable/bgndbutton"
         />
     
+<!--    <TextView-->
+<!--        android:layout_width="335dp"-->
+<!--        android:layout_height="16dp"-->
+<!--        android:text="@string/signup"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/buttonCreateAkun"-->
+<!--        android:layout_marginTop="183dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        />-->
+
     <TextView
-        android:layout_width="335dp"
+        android:id="@+id/idDont"
+        android:layout_width="175dp"
         android:layout_height="16dp"
+        android:textColor="@color/Neutraldarkgrey"
         android:text="@string/signup"
-        android:textAlignment="center"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="40dp"
         app:layout_constraintTop_toBottomOf="@id/buttonCreateAkun"
-        android:layout_marginTop="183dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="104dp"
+        />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:text="@string/sign"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateAkun"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="104dp"
+        android:textColor="@color/primary"
         />
 
 

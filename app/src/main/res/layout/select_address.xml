@@ -7,85 +7,78 @@
     android:background="@drawable/dialog_bg"
     >
 
-    <ImageView
-        android:id="@+id/rectangle"
-        android:layout_width="65dp"
-        android:layout_height="6dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginRight="155dp"
-        app:layout_constraintStart_toStartOf="parent"
+    <com.example.androidrawlabspace.rawlabspace.shared.ui.ReuseHeaderDialog
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/rectangle"
-        />
-    
-    <TextView
-        android:id="@+id/selectAddress"
-        android:layout_width="335dp"
-        android:layout_height="30dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:textFontWeight="700"
-        android:text="@string/selectAddress"
-        android:textAlignment="center"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="34dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:lineHeight="18dp"
-        />
+        android:layout_marginTop="0dp"/>
 
-    
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnsearch"
-        android:layout_width="15.75dp"
-        android:layout_height="15.75dp"
-        android:textColor="@color/Neutraldarkgrey"
-        android:padding="10dp"
-        android:layout_marginRight="308.12dp"
-        app:layout_constraintStart_toStartOf="@id/idedit"
-        app:layout_constraintEnd_toEndOf="@id/idedit"
-        app:layout_constraintTop_toTopOf="@id/idedit"
-        android:layout_marginLeft="11.13dp"
-        android:layout_marginTop="14.12dp"
-        android:background="@drawable/btn_search"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/idedit"
-        android:layout_width="335dp"
-        android:layout_height="44dp"
-        android:textColor="@color/Neutraldarkgrey"
-        android:padding="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/selectAddress"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/rectangle_form"
-        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/const2"
+        android:id="@+id/cons2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="140dp"
-        android:background="@color/coloredittext1"
+        android:layout_height="84dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:background="@color/white"
+        >
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsearch"
+            android:layout_width="15.75dp"
+            android:layout_height="15.75dp"
+            android:textColor="@color/Neutraldarkgrey"
+            android:padding="10dp"
+            android:layout_marginRight="308.12dp"
+            app:layout_constraintStart_toStartOf="@id/idedit"
+            app:layout_constraintEnd_toEndOf="@id/idedit"
+            app:layout_constraintTop_toTopOf="@id/idedit"
+            android:layout_marginLeft="11.13dp"
+            android:layout_marginTop="14.12dp"
+            android:background="@drawable/btn_search"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/idedit"
+            android:layout_width="335dp"
+            android:layout_height="44dp"
+            android:textColor="@color/Neutraldarkgrey"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/rectangle_form"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"
+        android:background="#F5F7FA"
+        >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/const3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/white"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="10dp"
-            app:layout_constraintEnd_toStartOf="@id/const2"
-            app:layout_constraintEnd_toEndOf="@id/const2"
-            app:layout_constraintTop_toTopOf="@id/const2"
             >
             <TextView
                 android:id="@+id/recentSearch"
@@ -97,23 +90,36 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                app:layout_constraintStart_toStartOf="@id/const3"
-                app:layout_constraintEnd_toEndOf="@id/const3"
-                app:layout_constraintTop_toTopOf="@id/const3"
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 />
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recentSearch">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@id/const3"
-                app:layout_constraintEnd_toEndOf="@id/const3"
-                app:layout_constraintTop_toBottomOf="@id/recentSearch"
-                app:layout_constraintVertical_bias="0.5" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+
+                </LinearLayout>
+
+            </ScrollView>
 
 
 
@@ -154,9 +160,11 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

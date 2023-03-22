@@ -3,15 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100dp"
     tools:context=".rawlabspace.shared.ui.HeaderView">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:layout_marginBottom="636dp"
         android:backgroundTint="#F7943C"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,9 +18,9 @@
             android:id="@+id/iconBack"
             android:layout_width="30dp"
             android:layout_height="25dp"
-            android:src="@drawable/arrowleft"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="45dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/arrowleft" />
 
         <TextView
             android:id="@+id/titleHeader"

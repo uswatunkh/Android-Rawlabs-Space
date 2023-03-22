@@ -28,7 +28,10 @@ class HeaderView : ConstraintLayout {
 
     private fun init(context: Context, attributeSet: AttributeSet?) {
         mContext = context
-
         binding = ActivityHeaderBinding.bind(LayoutInflater.from(mContext).inflate(R.layout.activity_header , this, true))
+    }
+
+    fun setTitle (title: String){
+        binding.titleHeader.text = title
     }
 }
